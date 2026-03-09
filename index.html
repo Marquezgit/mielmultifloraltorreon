@@ -1,0 +1,369 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Miel Multifloral Laguna</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Playfair Display', serif;
+background:#fffdf7;
+color:#333;
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+background:url("img/fondo-miel.jpg");
+background-size:cover;
+background-position:center;
+padding:130px 20px;
+text-align:center;
+color:white;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+}
+
+.hero h1{
+position:relative;
+font-size:44px;
+color:#FFD700;
+margin-bottom:20px;
+}
+
+.descripcion{
+position:relative;
+max-width:850px;
+margin:auto;
+font-size:19px;
+line-height:1.7;
+background:rgba(0,0,0,0.45);
+padding:25px;
+border-radius:10px;
+}
+
+/* BOTON */
+
+.boton{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#D4A017;
+color:white;
+font-weight:bold;
+text-decoration:none;
+border-radius:8px;
+font-size:18px;
+position:relative;
+}
+
+.boton:hover{
+background:#b98a0a;
+}
+
+/* SECCIONES */
+
+section{
+padding:70px 20px;
+text-align:center;
+}
+
+h2{
+font-size:32px;
+color:#C9A227;
+margin-bottom:25px;
+}
+
+/* GALERIA */
+
+.galeria{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.item{
+width:260px;
+}
+
+.item img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.item h3{
+margin-top:10px;
+color:#444;
+font-size:18px;
+}
+
+/* HISTORIA CON IMAGEN */
+
+.historia-seccion{
+position:relative;
+background:url("img/fondo-colmena.jpg");
+background-size:cover;
+background-position:center;
+padding:90px 20px;
+color:white;
+}
+
+.historia-seccion::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+}
+
+.historia{
+position:relative;
+max-width:850px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+}
+
+/* TIPOS DE MIEL */
+
+.tipos{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
+margin-top:30px;
+}
+
+.tipo{
+width:300px;
+background:#fff6db;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tipo h3{
+color:#c99800;
+margin-bottom:10px;
+}
+
+/* OFERTAS */
+
+.ofertas{
+background:url("img/fondo-madera.jpg");
+background-size:cover;
+background-position:center;
+padding:80px 20px;
+}
+
+.oferta-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
+}
+
+.oferta{
+background:rgba(255,255,255,0.92);
+padding:30px;
+border-radius:12px;
+width:280px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.oferta img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.precio{
+font-size:28px;
+color:#C9A227;
+margin:15px 0;
+font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+background:#f2e3b3;
+text-align:center;
+padding:25px;
+font-size:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<h1>Miel Multifloral Laguna</h1>
+
+<p class="descripcion">
+
+si lo que buscas es un postre natural y nutritivo, la miel multifloral hecha por las mejores abejas de México, con las mejores cosechas producidas por los apicultores de zacatecas y Yucatán. Date un gusto y prueba la miel más deliciosa de México, sin colorantes ni aditamentos artificiales. compra y prueba la mejor miel que tenemos para ti. inclúyela en tu desayuno, en tu café, en tus hotcakes, incluso a cucharadas para los remedios antigripales.
+
+</p>
+
+<a class="boton" href="https://wa.me/528719593901">
+Comprar por WhatsApp
+</a>
+
+</div>
+
+<!-- GALERIA -->
+
+<section>
+
+<h2>Nuestra Galería</h2>
+
+<div class="galeria">
+
+<div class="item">
+<img src="img/mielfrasco.jpg">
+<h3>Frascos de Miel Natural</h3>
+</div>
+
+<div class="item">
+<img src="img/panal.jpg">
+<h3>Panal Natural</h3>
+</div>
+
+<div class="item">
+<img src="img/abejas.jpg">
+<h3>Abejas Trabajando</h3>
+</div>
+
+<div class="item">
+<img src="img/apiario.jpg">
+<h3>Apiario de Producción</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- HISTORIA -->
+
+<section class="historia-seccion">
+
+<h2>Historia y Producción de la Miel</h2>
+
+<div class="historia">
+
+<p>
+La miel es uno de los alimentos naturales más antiguos del mundo. Desde hace miles de años ha sido utilizada como alimento, medicina natural y fuente de energía. Las abejas recolectan el néctar de las flores y lo transforman en miel dentro de la colmena mediante un proceso natural único.
+</p>
+
+<br>
+
+<p>
+La miel multifloral se obtiene cuando las abejas visitan diferentes flores durante la temporada de floración. Esto le da un sabor único, aroma natural y una gran riqueza nutricional.
+</p>
+
+<br>
+
+<p>
+Los apicultores cuidan las colmenas respetando el equilibrio de la naturaleza. Después de la cosecha, la miel se filtra cuidadosamente para conservar sus propiedades naturales y llegar pura a tu mesa.
+</p>
+
+</div>
+
+</section>
+
+<!-- TIPOS DE MIEL -->
+
+<section>
+
+<h2>Nuestros Tipos de Miel</h2>
+
+<div class="tipos">
+
+<div class="tipo">
+<h3>Miel Ámbar</h3>
+<p>
+Producida en Yucatán, tiene un color dorado oscuro y un sabor intenso muy apreciado por su aroma natural y riqueza en nutrientes.
+</p>
+</div>
+
+<div class="tipo">
+<h3>Miel Tipo Mantequilla</h3>
+<p>
+Producida en Zacatecas, tiene un color claro y una textura suave parecida a la mantequilla, con un sabor dulce ideal para desayunos y postres.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- OFERTAS -->
+
+<section class="ofertas">
+
+<h2>Ofertas Disponibles</h2>
+
+<div class="oferta-container">
+
+<div class="oferta">
+<img src="img/miel1kg.jpg">
+<h3>Bote de 1 Kilo</h3>
+<div class="precio">$200</div>
+<a class="boton" href="https://wa.me/528719593901">Comprar</a>
+</div>
+
+<div class="oferta">
+<img src="img/miel500.jpg">
+<h3>Bote de Medio Kilo</h3>
+<div class="precio">$110</div>
+<a class="boton" href="https://wa.me/528719593901">Comprar</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+Miel Multifloral Laguna  
+Producto Natural Mexicano
+
+</footer>
+
+</body>
+</html>
+```
